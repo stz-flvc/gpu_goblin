@@ -74,7 +74,7 @@ export function Navbar() {
         <div className="flex items-center gap-4">
           <Button 
             size="sm" 
-            onClick={() => document.querySelector('#token')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.querySelector('#community')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Enter the Vault
           </Button>

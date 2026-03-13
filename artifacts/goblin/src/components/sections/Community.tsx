@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/Button';
 
 export function Community() {
   return (
-    <section className="py-32 relative overflow-hidden bg-background border-t border-white/5">
+    <section id="community" className="py-32 relative overflow-hidden bg-background border-t border-white/5">
       {/* Background emojis pattern */}
       <div className="absolute inset-0 overflow-hidden opacity-[0.02] pointer-events-none select-none flex flex-wrap gap-8 justify-center items-center">
         {Array.from({ length: 100 }).map((_, i) => (
