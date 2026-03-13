@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { EnergyLines } from '@/components/canvas/EnergyLines';
 import { VaultCore } from '@/components/ui/VaultCore';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 
 const taglines = [
   "THE GPU SHORTAGE WAS US",

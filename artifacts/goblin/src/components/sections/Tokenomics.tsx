@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Lock, Cpu, Droplets, Coins } from 'lucide-react';
+import { Lock, Cpu, Droplets, Coins, Copy, CheckCheck, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
+
+const CONTRACT_ADDRESS = '2FW5Jz55z98s81QjgjywW95mjUu7ZHXx6hpdBGjMjupx';
+const DEXSCREENER_URL = 'https://dexscreener.com/solana/HWeVbBJuS68SFHv55V1vHrca8h4ShvHz8PXGkWUu48AB';
 
 function AnimatedCounter({ end, duration = 2 }: { end: number, duration?: number }) {
   const [count, setCount] = useState(0);
@@ -14,7 +17,7 @@ function AnimatedCounter({ end, duration = 2 }: { end: number, duration?: number
       if (!startTime) startTime = timestamp;
       const progress = timestamp - startTime;
       const percentage = Math.min(progress / (duration * 1000), 1);
-      
+
       // Easing out cubic
       const easeOut = 1 - Math.pow(1 - percentage, 3);
       setCount(Math.floor(end * easeOut));
@@ -40,6 +43,13 @@ const features = [
 
 export function Tokenomics() {
   const [isVisible, setIsVisible] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(CONTRACT_ADDRESS);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
     <section id="token" className="py-24 bg-gradient-to-b from-background to-black">
@@ -123,16 +133,16 @@ export function Tokenomics() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          
+
           {/* Main Stats Card */}
-          <motion.div 
+          <motion.div
             onViewportEnter={() => setIsVisible(true)}
             viewport={{ once: true }}
             className="lg:col-span-8 glass-panel rounded-2xl p-8 md:p-12 relative overflow-hidden"
           >
             {/* Circuit background subtle */}
             <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]" />
-            
+
             <div className="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-12 border-b border-white/10 pb-8">
               <div>
                 <h3 className="text-sm font-mono text-muted-foreground mb-2">TOTAL SUPPLY</h3>
@@ -149,11 +159,52 @@ export function Tokenomics() {
               </div>
             </div>
 
+            {/* Contract Address + DexScreener */}
+            <div className="relative z-10 space-y-3 mb-10 border-b border-white/10 pb-8">
+              {/* CA Row */}
+              <h3 className="text-sm font-mono text-muted-foreground">CONTRACT ADDRESS</h3>
+              <div className="flex items-center gap-2">
+                <div className="flex-1 flex items-center gap-3 bg-black/40 border border-white/10 rounded-lg px-4 py-3 font-mono text-xs text-primary/80 min-w-0">
+                  <span className="truncate">{CONTRACT_ADDRESS}</span>
+                </div>
+                <button
+                  onClick={handleCopy}
+                  title="Copy contract address"
+                  className={cn(
+                    "flex items-center gap-2 px-4 py-3 rounded-lg border text-xs font-mono font-bold tracking-wider uppercase transition-all duration-200 shrink-0",
+                    copied
+                      ? "border-primary/60 bg-primary/20 text-primary"
+                      : "border-white/10 bg-white/5 text-muted-foreground hover:border-primary/40 hover:bg-primary/10 hover:text-primary"
+                  )}
+                >
+                  {copied ? <CheckCheck size={14} /> : <Copy size={14} />}
+                  {copied ? 'Copied!' : 'Copy'}
+                </button>
+              </div>
+
+              {/* DexScreener link */}
+              <a
+                href={DEXSCREENER_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-5 py-3 rounded-lg border border-white/10 bg-white/5 hover:border-[#00d4ff]/40 hover:bg-[#00d4ff]/10 hover:text-[#00d4ff] text-muted-foreground transition-all duration-200 group"
+              >
+                {/* DexScreener logo — official current mark */}
+                <svg width="20" height="20" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
+                  <path fillRule="evenodd" clipRule="evenodd" d="M10.694 0h29.778v14.222H10.694V0zM0 14.222h10.694v71.111H0V14.222zm40.471 0h10.695v14.223H40.47V14.222zm-29.777 71.11H0v14.224h10.694V85.332zm29.777 0H29.777v14.224h10.694V85.332zm10.695 14.224H40.47v14.222h10.695V99.556zm29.777-85.334H70.25v14.223h10.693V14.222zm0 71.11H70.25v14.224h10.693V85.332zm10.695 14.224H80.944v14.222h10.694V99.556zM70.25 0h29.778v14.222H70.25V0zm29.778 14.222h10.694v71.111H100.03V14.222zM0 85.332h10.694v14.224H0V85.332zm0 14.224h40.471v14.222H0V99.556zm70.25 0h40.472v14.222H70.25V99.556zm-30.694 14.222H70.25V128H39.556v-14.222zm-10.695 0h10.695V128H28.861v-14.222zM80.944 113.778h10.694V128H80.944v-14.222z" fill="currentColor" />
+                  <circle cx="107" cy="107" r="17" stroke="currentColor" strokeWidth="8" fill="none" />
+                  <line x1="119" y1="119" x2="128" y2="128" stroke="currentColor" strokeWidth="8" strokeLinecap="round" />
+                </svg>
+                <span className="text-sm font-mono font-bold tracking-wider uppercase">View on DexScreener</span>
+                <ExternalLink size={14} className="ml-auto opacity-60 group-hover:opacity-100 transition-opacity" />
+              </a>
+            </div>
+
             {/* Distribution Bar */}
             <div className="space-y-4">
               <h3 className="text-sm font-mono text-muted-foreground">TOKEN DISTRIBUTION</h3>
               <div className="h-6 w-full rounded-full overflow-hidden flex bg-white/5 border border-white/10">
-                <motion.div 
+                <motion.div
                   initial={{ width: 0 }}
                   whileInView={{ width: "98%" }}
                   viewport={{ once: true }}
@@ -162,7 +213,7 @@ export function Tokenomics() {
                 >
                   <div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </motion.div>
-                <motion.div 
+                <motion.div
                   initial={{ width: 0 }}
                   whileInView={{ width: "2%" }}
                   viewport={{ once: true }}
@@ -186,7 +237,7 @@ export function Tokenomics() {
           {/* Features Grid */}
           <div className="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
             {features.map((f, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
