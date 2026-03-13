@@ -49,6 +49,79 @@ export function Tokenomics() {
           <p className="text-muted-foreground font-mono">NETWORK_CURRENCY // SOL_PROGRAM</p>
         </div>
 
+        {/* Project Overview */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+          {/* Left — What is GPU Goblins */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="space-y-5"
+          >
+            <p className="font-mono text-xs tracking-[0.25em] text-primary/50">// PROJECT_OVERVIEW</p>
+            <p className="text-muted-foreground leading-relaxed">
+              GPU Goblins is a culture-first crypto project that blends internet humor, speculative storytelling, and real-world discussions about compute infrastructure. The project frames the expansion of modern data centers through a fictional narrative — digital creatures known as <span className="text-primary">Goblins</span> inhabit server infrastructure and redistribute unused compute power.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              The brand sits at the intersection of three ideas:
+            </p>
+            <div className="space-y-2">
+              {[
+                "Internet meme culture",
+                "AI and GPU infrastructure",
+                "Anti-centralization narratives",
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-3 text-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                  <span className="text-foreground/80">{item}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground/60 italic font-mono border-l-2 border-primary/30 pl-4">
+              GPU Goblins feels like a strange mix of hacker collective, folklore, and internet rebellion.
+            </p>
+          </motion.div>
+
+          {/* Right — The Lore */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.15 }}
+            className="bg-white/[0.02] border border-white/8 rounded-xl p-6 space-y-5"
+          >
+            <p className="font-mono text-xs tracking-[0.25em] text-secondary/50">// LORE_ARCHIVE</p>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Inside global data centers known as <span className="text-secondary font-semibold">The Vaults</span>, a powerful consortium called <span className="text-accent font-semibold">The Syndicate</span> continuously expands compute infrastructure — a faceless network of corporations concentrating the world's GPU power.
+            </p>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              Inside the heat of these server complexes, unexpected life emerged. <span className="text-primary font-semibold">The Goblins</span> — spawned from:
+            </p>
+            <div className="space-y-1.5">
+              {[
+                "Discarded compute cycles",
+                "Orphaned processes",
+                "Unused GPU capacity",
+              ].map((item, i) => (
+                <div key={i} className="flex items-center gap-3 text-xs">
+                  <span className="w-1 h-1 rounded-full bg-secondary shrink-0" />
+                  <span className="text-muted-foreground">{item}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              The Goblins operate silently within the Vaults, redistributing idle compute and exposing hidden infrastructure. The conflict between Goblins and The Syndicate is not physical — it is fought through <span className="text-primary">access</span>, <span className="text-primary">infrastructure</span>, and <span className="text-primary">information flow</span>.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Divider */}
+        <div className="flex items-center gap-4 mb-16">
+          <div className="flex-1 h-px bg-white/5" />
+          <span className="font-mono text-xs text-muted-foreground/40 tracking-widest">TOKEN_INFORMATION</span>
+          <div className="flex-1 h-px bg-white/5" />
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           
           {/* Main Stats Card */}
