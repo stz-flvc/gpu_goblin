@@ -44,14 +44,6 @@ export function Community() {
             >
               Follow on X
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="w-full sm:w-auto"
-              onClick={() => document.querySelector('#token')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Token Info
-            </Button>
           </div>
         </motion.div>
       </div>
