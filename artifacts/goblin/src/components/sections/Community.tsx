@@ -32,7 +32,7 @@ export function Community() {
             <Button 
               size="lg" 
               className="w-full sm:w-auto"
-              onClick={() => window.open('https://t.me', '_blank')}
+              onClick={() => window.open('https://t.me/+VqYSXsC_Va9jZjIx', '_blank')}
             >
               Join Telegram
             </Button>
@@ -40,7 +40,7 @@ export function Community() {
               size="lg" 
               variant="secondary" 
               className="w-full sm:w-auto"
-              onClick={() => window.open('https://twitter.com', '_blank')}
+              onClick={() => window.open('https://x.com/GPUGOBLINS', '_blank')}
             >
               Follow on X
             </Button>

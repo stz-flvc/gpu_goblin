@@ -77,14 +77,11 @@ export function Footer() {
               A decentralized movement reclaiming idle compute power from corporate silos. We are the architects of the new web.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary/20 hover:text-primary hover:border-primary transition-colors">
+              <a href="https://x.com/GPUGOBLINS" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary/20 hover:text-primary hover:border-primary transition-colors">
                 <Twitter size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary/20 hover:text-primary hover:border-primary transition-colors">
+              <a href="https://t.me/+VqYSXsC_Va9jZjIx" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary/20 hover:text-primary hover:border-primary transition-colors">
                 <MessageSquare size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary/20 hover:text-primary hover:border-primary transition-colors">
-                <Github size={18} />
               </a>
             </div>
           </div>

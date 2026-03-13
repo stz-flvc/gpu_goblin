@@ -84,7 +84,7 @@ export function Hero() {
           <Button size="lg" variant="secondary" onClick={() => document.querySelector('#chronicles')?.scrollIntoView({ behavior: 'smooth' })}>
             View Manifesto
           </Button>
-          <Button size="lg" variant="ghost" onClick={() => window.open('https://twitter.com', '_blank')}>
+          <Button size="lg" variant="ghost" onClick={() => window.open('https://t.me/+VqYSXsC_Va9jZjIx', '_blank')}>
             Join Network
           </Button>
         </motion.div>
