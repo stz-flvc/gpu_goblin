@@ -1,0 +1,17 @@
+packages:
+  "framer-motion": "For complex scroll animations, hover states, and rotating text elements"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility to safely merge Tailwind CSS classes without style conflicts"
+
+images:
+  - path: "artifacts/goblin/public/images/syndicate-datacenter.png"
+    description: "Dark, cold, menacing corporate data center server racks with blue and white harsh lighting, cyberpunk style, high tech, intimidating"
+    aspect_ratio: "16:9"
+  - path: "artifacts/goblin/public/images/goblin-scrap.png"
+    description: "Scrappy, messy makeshift server room with glowing green and orange cables, cobbled together tech, glowing screens, underground hacker vibe"
+    aspect_ratio: "16:9"
+
+notes:
+  - This is a pure frontend implementation with hardcoded content.
+  - Relying on Framer Motion for scroll reveals and layout animations.
+  - Canvas API used for high-performance interactive background effects.

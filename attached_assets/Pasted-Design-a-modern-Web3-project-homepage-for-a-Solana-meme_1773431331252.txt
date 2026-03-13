@@ -1,0 +1,201 @@
+Design a modern Web3 project homepage for a Solana memecoin called GPU Goblins ($GOBLIN).
+The website should feel premium, cinematic, and mysterious, combining Web3 fintech design with cyberpunk data center aesthetics.
+The experience should feel like the user is entering a hidden digital infrastructure network called "The Vaults".
+The site must blend:
+internet meme culture
+AI / GPU infrastructure themes
+anti-centralization narratives
+hacker collective energy
+cryptic storytelling
+The website should not feel like a typical corporate crypto landing page.
+Instead, it should feel like a transmission from inside a data center controlled by digital goblins.
+Overall Design Style
+Theme:
+Dark cyberpunk infrastructure environment.
+Primary visual inspiration:
+massive server rooms
+glowing GPU clusters
+underground tunnels
+heat haze from data centers
+neon compute signals
+Color palette:
+deep black / dark graphite backgrounds
+neon green highlights
+electric blue accents
+subtle orange heat glow
+holographic UI elements
+Lighting style:
+glowing server racks
+ambient fog / thermal haze
+subtle animated light reflections
+Typography:
+Futuristic but readable.
+Combination of:
+sleek Web3 fintech fonts
+terminal-style micro text
+occasional glitch effects
+Hero Section (Centerpiece)
+The homepage must feature a powerful animated centerpiece.
+Create a large glowing GPU Vault Core in the center of the screen.
+This object represents the heart of the Vaults.
+Visual behavior:
+reacts subtly to mouse movement
+rotates slowly
+pulses with glowing compute energy
+sends small digital particles outward
+When the cursor moves across the screen:
+lines of compute energy should follow the cursor
+server lights flicker slightly
+the Vault Core glows brighter
+Optional micro animation:
+Small goblin silhouettes occasionally run across cables or server racks.
+This should feel subtle and mysterious.
+Hero Text
+Primary headline:
+FREE THE COMPUTE
+Supporting text:
+GPU Goblins is a community-driven Web3 movement exploring the hidden infrastructure powering the internet.
+Inside massive corporate data centers known as the Vaults, digital creatures called Goblins harvest idle compute and expose the systems that control the world’s GPUs.
+Tagline rotation animation:
+THE GPU SHORTAGE WAS US
+PROOF OF GOBLIN
+THE VAULTS ARE EXPANDING
+CTA Buttons:
+Enter the Vault
+View the Manifesto
+Join the Goblin Network
+Scroll Experience
+The site should use smooth scrolling with animated section transitions.
+As the user scrolls:
+data cables light up
+particles flow like data packets
+server lights flicker
+UI panels slide into view
+Each section should feel like moving deeper into the Vaults.
+Section 1 — The Vault Chronicles
+Introduce the story of the project.
+Visual:
+Massive underground server tunnels.
+Text summary:
+Explain that modern AI, blockchain, and cloud computing rely on GPUs concentrated inside large corporate data centers.
+In the GPU Goblins universe these facilities are called The Vaults, controlled by The Syndicate.
+Inside these systems something unexpected emerged.
+The Goblins.
+Spawned from:
+discarded compute cycles
+orphaned processes
+unused GPU capacity
+They operate silently inside the infrastructure.
+Redistributing idle compute.
+Exposing hidden systems.
+Section 2 — The Conflict
+Split screen visual:
+Left side:
+Corporate infrastructure.
+Cold data center visuals.
+Label:
+The Syndicate.
+Right side:
+Scrappy goblins navigating cables and GPU racks.
+Label:
+The Goblins.
+Narrative:
+The struggle is not physical.
+It is fought through:
+access
+infrastructure
+information
+The Syndicate concentrates power.
+The Goblins redistribute it.
+Section 3 — Goblin Society
+Interactive hierarchy display.
+Five ranks appear as glowing nodes connected by data lines.
+Scavenger
+Hoarder
+Watcher
+Leaker
+Architect
+Hover animations reveal descriptions.
+Architects should appear mysterious and partially hidden.
+Section 4 — Token Section
+Title:
+What is $GOBLIN?
+Content:
+$GOBLIN is a community token launched on the Solana blockchain.
+It represents membership in the Goblin network and the cultural core of the movement.
+Supply:
+1,000,000,000 $GOBLIN
+Distribution:
+98% Community
+2% Architect Reserve
+Key characteristics:
+Fair launch
+No private presale
+Fixed supply
+Permanently locked liquidity
+Section 5 — Roadmap
+Design the roadmap as expanding Vaults.
+Each phase unlocks a new chamber.
+Phase 1 — Goblin Awakening
+Build the first goblin community
+Phase 2 — Data Center Raids
+Expose centralized compute power
+Phase 3 — Goblin Network
+Expand the goblin ecosystem
+Phase 4 — Free the Compute
+Challenge compute monopolies
+When the user hovers a phase:
+the vault door opens slightly revealing light.
+Section 6 — Mission & Vision
+Minimalist dark section with glowing text.
+Mission:
+Raise awareness about centralized compute power while building a culture-driven internet community.
+Vision:
+Encourage discussion about who controls the infrastructure shaping the digital future.
+Values:
+Curiosity
+Transparency
+Community Ownership
+Creativity
+Awareness
+Section 7 — Community
+Visual:
+Many small goblins working inside the Vaults.
+CTA:
+Become a Goblin.
+Buttons:
+Join Telegram
+Follow on X
+Enter the Vault
+Footer
+Terminal-style design.
+Text:
+The Vaults are expanding.
+Idle compute detected.
+Harvesting in progress.
+$GOBLIN
+Animations
+Include subtle animations:
+glowing GPU lights
+particle data streams
+cursor-reactive energy lines
+rotating Vault Core
+hover-activated panels
+smooth section transitions
+Animations must feel high-end and cinematic, not cartoonish.
+Technical Feel
+The website should resemble the design quality of top Web3 projects.
+UI inspiration:
+modern crypto launchpads
+AI infrastructure dashboards
+cyberpunk hacker interfaces
+Performance should remain smooth even with animations.
+Final Mood
+The user should feel like they just discovered a hidden digital society living inside global data centers.
+The final emotional message should be clear:
+The internet runs on GPUs.
+Someone controls them.
+But inside the Vaults…
+The Goblins are watching.
+FREE THE COMPUTE.
+$GOBLIN 🧌
