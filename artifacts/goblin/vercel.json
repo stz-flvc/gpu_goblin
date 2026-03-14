@@ -1,7 +1,4 @@
 {
-    "buildCommand": "pnpm build",
-    "outputDirectory": "artifacts/goblin/dist/public",
-    "framework": "vite",
     "rewrites": [
         {
             "source": "/(.*)",
